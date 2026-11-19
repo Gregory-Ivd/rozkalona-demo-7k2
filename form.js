@@ -1,7 +1,7 @@
 // Заявка з форми: відправляє дані в Google Apps Script (лист «Заявки» в таблиці + лист на пошту).
 (function () {
   var ENDPOINT = "https://script.google.com/macros/s/AKfycbycP3Tdwf7Us-5VkDC5uXWlJs9_Cn8TNtYk2g1tvB9Ry_ugOCZnBWQWJ8bWy96x38P8/exec";
-  var MAP = { "Ім'я": "name", "Телефон": "phone", "Що потрібно": "what", "Розміри або опис": "details", "Місто або область": "where" };
+  var MAP = { "Ім'я": "name", "Телефон": "phone", "Що потрібно": "what", "Розміри або опис": "details", "Коментар (необов'язково)": "details", "Місто або область": "where", "Для чого": "extra", "Довжина, м": "extra", "Ширина, м": "extra", "Висота, м": "extra" };
   document.querySelectorAll("form.formbox").forEach(function (form) {
     var note = form.querySelector(".demo-note");
     var btn = form.querySelector("button[type=submit]");
@@ -14,10 +14,15 @@
     form.addEventListener("submit", function (ev) {
       ev.preventDefault();
       var d = { type: "lead", page: location.pathname.split("/").pop() || "index.html", website: trap.value };
+      var extra = [];
       form.querySelectorAll("label").forEach(function (l) {
-        var f = l.nextElementSibling, k = MAP[l.textContent.trim()];
-        if (k && f) d[k] = f.value.trim();
+        var f = l.nextElementSibling, name = l.textContent.trim(), k = MAP[name];
+        if (!k || !f || !("value" in f)) return;
+        var v = f.value.trim();
+        if (k === "extra") { if (v) extra.push(name + ": " + v); } else d[k] = v;
       });
+      if (!d.what && form.dataset.what) d.what = form.dataset.what;
+      if (extra.length) d.details = extra.join("; ") + (d.details ? " | " + d.details : "");
       var digits = (d.phone || "").replace(/\D/g, "");
       note.style.display = "block";
       if (!d.name || digits.length < 9) { note.textContent = "Вкажіть ім'я й телефон (мінімум 9 цифр)."; return; }

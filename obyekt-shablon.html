@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Шаблон сторінки об'єкта — Розкальона сталь</title>
+<meta name="description" content="Шаблон сторінки об'єкта: факти, історія, фото, відгук.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Oswald:wght@500;600;700&display=swap&subset=cyrillic" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ribbon">ПРОТОТИП для погодження: тексти й фото не остаточні. <span style="font-weight:500">Жовті мітки = дані, яких ми ще чекаємо.</span></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Розкальона сталь">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#d8261c"/><path d="M7 22 L16 7 L25 22 Z" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"/><circle cx="16" cy="22" r="2.6" fill="#ff9f1c"/></svg>
+      <span>Розкальона <b>сталь</b></span>
+    </a>
+    <button class="burger" aria-label="Меню" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+    <nav class="menu" id="menu">
+      <a href="index.html#poslugy">Послуги</a>
+      <a href="navisy.html">Навіси</a>
+      <a href="angary.html">Ангари</a>
+      <a href="vorota-parkany.html">Ворота й паркани</a>
+      <a href="obyekty.html">Об'єкти</a>
+      <a href="index.html#yak">Як працюємо</a>
+      <a href="index.html#geo">Географія</a>
+      <a class="btn sm" href="#zayavka">Розрахунок</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Головна</a> / <a href="obyekty.html">Об'єкти</a> / Шаблон</div>
+    <div class="badge">Шаблон сторінки об'єкта</div>
+    <h1>Ангар <span class="ph" style="font-size:.5em;vertical-align:middle">[розмір]</span> у <span class="ph" style="font-size:.5em;vertical-align:middle">[область]</span></h1>
+    <p class="lead">Коротко: яка була задача, що зробили, за який час. Жовті мітки заповнюємо з ваших матеріалів.</p>
+  </div>
+</section>
+
+<section class="s">
+  <div class="wrap two">
+    <div>
+      <div class="sec-h"><div class="k">Факти</div><h2>Про об'єкт</h2></div>
+      <table class="ftable">
+        <tr><th>Тип</th><td><span class="ph">[ангар / склад / навіс / ворота]</span></td></tr>
+        <tr><th>Де</th><td><span class="ph">[місто, область]</span></td></tr>
+        <tr><th>Розмір</th><td><span class="ph">[довжина × ширина × висота]</span></td></tr>
+        <tr><th>Матеріали</th><td><span class="ph">[каркас, покриття]</span></td></tr>
+        <tr><th>Термін</th><td><span class="ph">[від заміру до здачі]</span></td></tr>
+        <tr><th>Рік</th><td><span class="ph">[рік]</span></td></tr>
+      </table>
+    </div>
+    <div>
+      <div class="sec-h"><div class="k">Історія</div><h2>Задача й рішення</h2></div>
+      <p><b>Задача.</b> <span class="ph">[що потрібно було замовнику, 1-2 речення]</span></p>
+      <p><b>Що зробили.</b> <span class="ph">[проєкт, виготовлення, монтаж, особливості]</span></p>
+      <p><b>Результат.</b> <span class="ph">[як використовується об'єкт, 1 речення]</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="s alt">
+  <div class="wrap">
+    <div class="sec-h"><div class="k">Фото</div><h2>Як це виглядає</h2><p>3-6 фото: загальний вигляд, деталі каркаса, монтаж.</p></div>
+    <div class="shots">
+      <div class="shot">Загальний вигляд<small>[фото]</small></div>
+      <div class="shot">Каркас<small>[фото]</small></div>
+      <div class="shot">Монтаж<small>[фото]</small></div>
+      <div class="shot">Деталь<small>[фото]</small></div>
+      <div class="shot">Внутрішній простір<small>[фото]</small></div>
+      <div class="shot">Готовий об'єкт<small>[фото]</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="s">
+  <div class="wrap two">
+    <div>
+      <div class="sec-h"><div class="k">Відгук</div><h2>Що каже замовник</h2></div>
+      <p class="quote"><span class="ph">[текст відгуку, ім'я або назва компанії. Тільки з дозволу замовника]</span></p>
+    </div>
+    <div class="card">
+      <h3>Потрібен схожий об'єкт?</h3>
+      <p style="margin:8px 0 14px">Напишіть призначення й розміри, порахуємо.</p>
+      <a class="btn" href="angary.html#zayavka">Отримати розрахунок</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><strong style="color:#fff">Розкальона сталь</strong><br>Рівне, Україна<br><span class="ph">[реквізити]</span></div>
+    <div><a href="index.html">Головна</a><br><a href="vorota-parkany.html">Ворота й паркани</a></div>
+    <div>Логотип тимчасовий.<br>Прототип від 18.11.2026</div>
+  </div>
+</footer>
+<div class="mbar"><a href="#zayavka">Розрахунок</a><a class="b" href="index.html">Головна</a></div>
+<script src="form.js"></script>
+</body>
+</html>

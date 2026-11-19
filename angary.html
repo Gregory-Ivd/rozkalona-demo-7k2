@@ -25,6 +25,7 @@
       <a href="navisy.html">Навіси</a>
       <a class="on" href="angary.html">Ангари</a>
       <a href="vorota-parkany.html">Ворота й паркани</a>
+      <a href="obyekty.html">Об'єкти</a>
       <a href="index.html#yak">Як працюємо</a>
       <a href="index.html#geo">Географія</a>
       <a class="btn sm" href="#zayavka">Розрахунок</a>
@@ -114,11 +115,19 @@
       <div class="sec-h"><div class="k">Заявка</div><h2>Розрахуємо ваш ангар</h2><p>Напишіть призначення й приблизні розміри або просто залиште номер.</p></div>
       <ul class="list"><li>Менеджер: <span class="ph">[ім'я, номер, Viber / Telegram]</span></li></ul>
     </div>
-    <form class="formbox">
+    <form class="formbox" data-what="Ангар, склад">
       <label>Ім'я</label><input type="text" autocomplete="name">
       <label>Телефон</label><input type="tel" autocomplete="tel" inputmode="tel">
-      <label>Розміри або опис</label><textarea placeholder="Наприклад: склад 20×40 м для зерна"></textarea>
+      <label>Для чого</label>
+      <select><option>Склад</option><option>Зерносховище</option><option>Техніка, майстерня, СТО</option><option>Виробництво</option><option>Тварини, агро</option><option>Інше</option></select>
+      <label>Розміри (приблизно)</label>
+      <div class="row3">
+        <div><label>Довжина, м</label><input type="text" inputmode="decimal"></div>
+        <div><label>Ширина, м</label><input type="text" inputmode="decimal"></div>
+        <div><label>Висота, м</label><input type="text" inputmode="decimal"></div>
+      </div>
       <label>Місто або область</label><input type="text">
+      <label>Коментар (необов'язково)</label><textarea placeholder="Наприклад: потрібні ворота, утеплення"></textarea>
       <button class="btn" type="submit">Надіслати заявку</button>
       <div class="demo-note"></div>
     </form>
