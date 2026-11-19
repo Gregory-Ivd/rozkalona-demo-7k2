@@ -1,6 +1,6 @@
 // Заявка з форми: відправляє дані в Google Apps Script (лист «Заявки» в таблиці + лист на пошту).
 (function () {
-  var ENDPOINT = "https://script.google.com/macros/s/AKfycbwpmpkZOygOoAytaGUEjua1lFG9uwHd2dvGCzsgg11Zc-23c_zPdI4Cj-51v1Vn73RG/exec";
+  var ENDPOINT = "https://script.google.com/macros/s/AKfycbycP3Tdwf7Us-5VkDC5uXWlJs9_Cn8TNtYk2g1tvB9Ry_ugOCZnBWQWJ8bWy96x38P8/exec";
   var MAP = { "Ім'я": "name", "Телефон": "phone", "Що потрібно": "what", "Розміри або опис": "details", "Місто або область": "where" };
   document.querySelectorAll("form.formbox").forEach(function (form) {
     var note = form.querySelector(".demo-note");
