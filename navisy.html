@@ -23,6 +23,7 @@
     <nav class="menu" id="menu">
       <a href="index.html#poslugy">Послуги</a>
       <a class="on" href="navisy.html">Навіси</a>
+      <a href="angary.html">Ангари</a>
       <a href="vorota-parkany.html">Ворота й паркани</a>
       <a href="index.html#yak">Як працюємо</a>
       <a href="index.html#geo">Географія</a>
@@ -113,13 +114,13 @@
       <div class="sec-h"><div class="k">Заявка</div><h2>Розрахуємо ваш навіс</h2><p>Напишіть приблизні розміри або просто залиште номер.</p></div>
       <ul class="list"><li>Менеджер: <span class="ph">[ім'я, номер, Viber / Telegram]</span></li></ul>
     </div>
-    <form class="formbox" onsubmit="event.preventDefault();this.querySelector('.demo-note').style.display='block'">
+    <form class="formbox">
       <label>Ім'я</label><input type="text" autocomplete="name">
       <label>Телефон</label><input type="tel" autocomplete="tel" inputmode="tel">
       <label>Розміри або опис</label><textarea placeholder="Наприклад: на 2 авто, 6×6 м"></textarea>
       <label>Місто або область</label><input type="text">
       <button class="btn" type="submit">Надіслати заявку</button>
-      <div class="demo-note">Це прототип: форма поки не надсилає дані.</div>
+      <div class="demo-note"></div>
     </form>
   </div>
 </section>
@@ -132,5 +133,6 @@
   </div>
 </footer>
 <div class="mbar"><a href="#zayavka">Розрахунок</a><a class="b" href="index.html">Головна</a></div>
+<script src="form.js"></script>
 </body>
 </html>
