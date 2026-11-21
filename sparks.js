@@ -74,28 +74,13 @@
     spawn(p.x, p.y, 32);
     start();
   });
-  var lx = null, ly = null;
   box.addEventListener('pointermove', function (e) {
+    if (!hold) return;
     var p = pos(e);
-    if (hold) {
-      hx = p.x; hy = p.y;
-      spawn(p.x, p.y, 4);
-      start();
-      lx = p.x; ly = p.y;
-      return;
-    }
-    // курсор миші: іскри від самого руху, гуще при швидшому русі
-    if (e.pointerType === 'mouse') {
-      if (lx !== null) {
-        var d = Math.sqrt((p.x - lx) * (p.x - lx) + (p.y - ly) * (p.y - ly));
-        var n = Math.min(8, Math.round(d / 8));
-        if (n > 0) { spawn(p.x, p.y, n); start(); }
-      }
-      lx = p.x; ly = p.y;
-      box.classList.add('used');
-    }
+    hx = p.x; hy = p.y;
+    spawn(p.x, p.y, 4);
+    start();
   });
-  box.addEventListener('pointerenter', function () { lx = null; ly = null; });
   function end() { hold = false; }
   box.addEventListener('pointerup', end);
   box.addEventListener('pointercancel', end);
