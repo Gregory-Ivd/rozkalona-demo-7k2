@@ -33,7 +33,8 @@
 </header>
 
 <section class="hero">
-  <div class="wrap">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
     <div class="eyebrow">Рівне й Західна Україна</div>
     <h1>Металоконструкції <span>під ключ</span> у Рівному й області</h1>
     <p class="lead">Проєкт, виготовлення й монтаж: навіси, ангари, склади, ворота, паркани. Виїжджаємо на замір і ведемо об'єкт до здачі.</p>
@@ -45,6 +46,12 @@
       <span>Замір: безкоштовно поруч, далі за домовленістю</span>
       <span>Відповідаємо протягом години</span>
       <span>Гарантія за договором</span>
+    </div>
+    </div>
+    <div class="weld-banner" id="weld" role="img" aria-label="Зварювання. Торкніться, щоб побачити іскри">
+      <video src="media/weld.mp4" poster="media/weld-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
+      <canvas aria-hidden="true"></canvas>
+      <span class="weld-hint">Торкніться: полетять іскри</span>
     </div>
   </div>
 </section>
@@ -189,5 +196,6 @@
 </footer>
 <div class="mbar"><a href="#zayavka">Розрахунок</a><a class="b" href="#poslugy">Послуги</a></div>
 <script src="form.js"></script>
+<script src="sparks.js" defer></script>
 </body>
 </html>
