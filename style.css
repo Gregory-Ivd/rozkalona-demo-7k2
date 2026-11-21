@@ -39,6 +39,7 @@ nav.menu a.btn,nav.menu a.btn:hover{color:var(--ink)}
 .hero::after{content:"";position:absolute;inset:auto 0 0 0;height:6px;background:linear-gradient(90deg,var(--red),var(--spark))}
 .hero .eyebrow{font-family:Oswald,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--spark);font-weight:600;font-size:14px;margin-bottom:14px}
 .hero h1 span{color:var(--red)}
+.hero h1 span.ph{color:#6b5300}
 .hero p.lead{font-size:18px;color:#dcdad4;max-width:620px;margin:18px 0 26px}
 .cta{display:flex;gap:12px;flex-wrap:wrap}
 .facts{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
