@@ -145,7 +145,7 @@ footer a{color:#dcdad4}
   .shot{aspect-ratio:16/10}
   .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;gap:8px;padding:10px 14px;background:rgba(19,20,23,.97);border-top:1px solid #2a2e35}
   .mbar a{flex:1;text-align:center;padding:12px 8px;border-radius:10px;font-weight:800;font-size:14px;text-transform:uppercase;text-decoration:none;color:var(--ink);background:var(--red)}
-  .mbar a.b{background:#2a2e35}
+  .mbar a.b{background:#2a2e35;color:#fff}
 }
 
 /* розміри в формі, таблиця фактів, шаблон об'єкта */
