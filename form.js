@@ -23,7 +23,7 @@
     form.removeAttribute("onsubmit");
     form.addEventListener("submit", function (ev) {
       ev.preventDefault();
-      var d = { type: "lead", page: location.pathname.split("/").pop() || "index.html", website: trap.value };
+      var d = { type: "lead", page: (location.pathname.split("/").pop() || "index.html") + location.search, website: trap.value };
       var extra = [];
       form.querySelectorAll("label").forEach(function (l) {
         var f = l.nextElementSibling, name = l.textContent.trim(), k = MAP[name];
