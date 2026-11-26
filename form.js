@@ -40,7 +40,11 @@
       d.phone = phone;
       btn.disabled = true; note.textContent = "Надсилаємо…";
       fetch(ENDPOINT, { method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify(d) })
-        .then(function () { note.textContent = "Дякуємо! Заявку отримано, передзвонимо."; form.reset(); })
+        .then(function () {
+          note.textContent = "Дякуємо! Заявку отримано, передзвонимо.";
+          if (window.trackLead) window.trackLead(d.what);
+          form.reset();
+        })
         .catch(function () { note.textContent = "Не вдалося надіслати. Зателефонуйте нам або спробуйте ще раз."; })
         .then(function () { btn.disabled = false; });
     });
