@@ -34,15 +34,17 @@ document.addEventListener('click', function (e) {
 </script>
 
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"LocalBusiness","name":"Розкальона сталь","alternateName":"Rozkalona Steel","url":"https://rozkalona.com.ua/","telephone":"+380982279532","description":"Проєктуємо, виготовляємо й монтуємо навіси, ангари, ворота та паркани у Рівному й області.","areaServed":[{"@type":"City","name":"Рівне"},{"@type":"AdministrativeArea","name":"Рівненська область"}],"address":{"@type":"PostalAddress","addressLocality":"Рівне","addressCountry":"UA"}}
+{"@context":"https://schema.org","@type":"LocalBusiness","@id":"https://rozkalona.com.ua/#business","name":"Розкальона сталь","alternateName":"Rozkalona Steel","url":"https://rozkalona.com.ua/","logo":"https://rozkalona.com.ua/img/apple-touch-icon.png","image":"https://rozkalona.com.ua/img/og.jpg","telephone":"+380982279532","description":"Проєктуємо, виготовляємо й монтуємо металоконструкції під ключ: навіси, ворота й паркани, ангари й склади. Рівне й області Західної України.","address":{"@type":"PostalAddress","addressLocality":"Рівне","addressCountry":"UA"},"areaServed":[{"@type":"City","name":"Рівне"},{"@type":"AdministrativeArea","name":"Рівненська область"},{"@type":"AdministrativeArea","name":"Волинська область"},{"@type":"AdministrativeArea","name":"Житомирська область"},{"@type":"AdministrativeArea","name":"Львівська область"},{"@type":"AdministrativeArea","name":"Закарпатська область"},{"@type":"AdministrativeArea","name":"Хмельницька область"},{"@type":"AdministrativeArea","name":"Івано-Франківська область"}],"knowsAbout":["навіси з металу","ворота","паркани","металеві ангари","склади","металоконструкції","зварювальні роботи"]}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Oswald:wght@500;600;700&display=swap&subset=cyrillic" rel="stylesheet">
-<link rel="stylesheet" href="/style.css?v=20261126a">
+<link rel="stylesheet" href="/style.css?v=20261126b">
 <link rel="icon" type="image/svg+xml" href="/img/logo-icon.svg">
+<link rel="icon" type="image/png" sizes="48x48" href="/img/favicon-48.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Скільки коштує?","acceptedAnswer":{"@type":"Answer","text":"Ціна залежить від розміру, висоти, навантаження й основи. Після заявки робимо замір і даємо розрахунок."}},{"@type":"Question","name":"Скільки триває виготовлення й монтаж?","acceptedAnswer":{"@type":"Answer","text":"Залежить від об'єкта. Терміни називаємо в розрахунку після заміру й фіксуємо в договорі."}},{"@type":"Question","name":"Яка гарантія?","acceptedAnswer":{"@type":"Answer","text":"Умови гарантії фіксуємо в договорі."}},{"@type":"Question","name":"Ви виїжджаєте в інші області?","acceptedAnswer":{"@type":"Answer","text":"Так. Працюємо в Західній Україні й за її межами. Бригади виїжджають з проживанням."}},{"@type":"Question","name":"Як оплатити?","acceptedAnswer":{"@type":"Answer","text":"Аванс і поетапна оплата, готівкою чи безготівково. Графік оплати фіксуємо в договорі."}},{"@type":"Question","name":"Скільки коштує виїзд на замір?","acceptedAnswer":{"@type":"Answer","text":"Поруч безкоштовно, далі за домовленістю."}},{"@type":"Question","name":"Що потрібно для розрахунку?","acceptedAnswer":{"@type":"Answer","text":"Розмір (довжина, ширина, висота), місце й для чого конструкція. Є фото чи креслення, надішліть. Ні, ми виїдемо на замір."}},{"@type":"Question","name":"Ви займаєтесь проєктом?","acceptedAnswer":{"@type":"Answer","text":"Так, у команді є інженер-проєктувальник. Проєкт під ваші потреби входить в об'єкт під ключ."}}]}</script>
 </head>
 <body>
-<div class="ribbon">ПРОТОТИП для погодження: тексти й фото не остаточні. <span style="font-weight:500">Жовті мітки = дані, яких ми ще чекаємо.</span></div>
 
 <header class="top">
   <div class="wrap">
@@ -57,7 +59,6 @@ document.addEventListener('click', function (e) {
       <a href="/angary.html">Ангари</a>
       <a href="/vorota-parkany.html">Ворота й паркани</a>
       <a href="/obyekty.html">Об'єкти</a>
-      <a href="/google.html">Ми в Google</a>
       <a class="btn sm" href="#zayavka">Розрахунок</a>
     </nav>
   </div>
@@ -105,23 +106,23 @@ document.addEventListener('click', function (e) {
       </a>
       <div class="card">
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 20V8h18v12M3 8l2-4h14l2 4M8 20v-6h8v6"/></svg></div>
-        <h3>Гаражі й бокси</h3><p>Металеві гаражі й бокси для авто та інструменту.</p><span class="soon">Сторінка в роботі</span>
+        <h3>Гаражі й бокси</h3><p>Металеві гаражі й бокси для авто та інструменту.</p><a class="more" href="#zayavka">Запитати розрахунок →</a>
       </div>
       <div class="card">
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V10h14v11M5 14h14M9 10V6M15 10V6"/></svg></div>
-        <h3>Балкони, сходи, перила</h3><p>Металеві конструкції для будинків і будівель.</p><span class="soon">Сторінка в роботі</span>
+        <h3>Балкони, сходи, перила</h3><p>Металеві конструкції для будинків і будівель.</p><a class="more" href="#zayavka">Запитати розрахунок →</a>
       </div>
       <div class="card">
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4v16M20 4v16M4 8h16M4 14h16M4 4l16 10M20 4 4 14"/></svg></div>
-        <h3>Каркаси будівель</h3><p>Металевий каркас під цивільні й виробничі об'єкти.</p><span class="soon">Сторінка в роботі</span>
+        <h3>Каркаси будівель</h3><p>Металевий каркас під цивільні й виробничі об'єкти.</p><a class="more" href="#zayavka">Запитати розрахунок →</a>
       </div>
       <div class="card">
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3l7 7-4 4-7-7zM10 7 3 14l7 7 7-7"/></svg></div>
-        <h3>Індивідуальні конструкції</h3><p>Виробимо за кресленням замовника або за вашою ідеєю.</p><span class="soon">Сторінка в роботі</span>
+        <h3>Індивідуальні конструкції</h3><p>Виробимо за кресленням замовника або за вашою ідеєю.</p><a class="more" href="#zayavka">Запитати розрахунок →</a>
       </div>
       <div class="card">
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/></svg></div>
-        <h3>Ремонт і реконструкція</h3><p>Підсилення, ремонт та переробка наявних металоконструкцій.</p><span class="soon">Сторінка в роботі</span>
+        <h3>Ремонт і реконструкція</h3><p>Підсилення, ремонт та переробка наявних металоконструкцій.</p><a class="more" href="#zayavka">Запитати розрахунок →</a>
       </div>
     </div>
   </div>
@@ -157,7 +158,7 @@ document.addEventListener('click', function (e) {
         <div class="shot img"><img src="/img/ready-canopy.jpg" alt="Арковий навіс" loading="lazy"><span class="cap">Арковий навіс</span></div>
         <div class="shot img"><img src="/img/e-hangar-below.jpg" alt="Арки ангара знизу" loading="lazy"><span class="cap">Арки ангара знизу</span></div>
       </div>
-      <p style="margin-top:12px"><span class="ph">[кількість об'єктів, роки на ринку: після підтвердження]</span></p>
+      <p style="margin-top:12px"><a class="more" href="/obyekty.html">Усі фото об'єктів →</a></p>
     </div>
   </div>
 </section>
@@ -177,17 +178,21 @@ document.addEventListener('click', function (e) {
 <section class="s alt">
   <div class="wrap two">
     <div>
-      <div class="sec-h"><div class="k">Довіра</div><h2>Відгуки й документи</h2></div>
-      <p><span class="ph">[3-4 відгуки з іменами або посиланнями на Google / Facebook]</span></p>
-      <p><span class="ph">[ФОП, реквізити; сертифікати чи допуски, якщо є]</span></p>
+      <div class="sec-h"><div class="k">Довіра</div><h2>Як ми відповідаємо за роботу</h2></div>
+      <ul class="list">
+        <li>Спочатку замір і розрахунок, потім договір. Обсяг, терміни, оплату й гарантію фіксуємо в договорі.</li>
+        <li>Показуємо справжні фото й відео з наших об'єктів, без картинок з інтернету.</li>
+        <li>На запит даємо контакти замовників, які готові підтвердити нашу роботу телефоном.</li>
+        <li>Проєкт робить інженер-проєктувальник з нашої команди, навантаження від снігу й вітру враховуємо в розрахунку.</li>
+      </ul>
     </div>
     <div>
       <div class="sec-h" style="margin-bottom:12px"><div class="k">Питання</div><h2>Часті запитання</h2></div>
       <details><summary>Скільки коштує?</summary><p>Ціна залежить від розміру, висоти, навантаження й основи. Після заявки робимо замір і даємо розрахунок.</p></details>
-      <details><summary>Скільки триває виготовлення й монтаж?</summary><p>Залежить від об'єкта. Терміни називаємо в розрахунку й фіксуємо в договорі. <span class="ph">[типові терміни: навіс, ворота, ангар: уточнити]</span></p></details>
-      <details><summary>Яка гарантія?</summary><p>Умови гарантії фіксуємо в договорі. <span class="ph">[роки: уточнити]</span></p></details>
+      <details><summary>Скільки триває виготовлення й монтаж?</summary><p>Залежить від об'єкта. Терміни називаємо в розрахунку після заміру й фіксуємо в договорі.</p></details>
+      <details><summary>Яка гарантія?</summary><p>Умови гарантії фіксуємо в договорі.</p></details>
       <details><summary>Ви виїжджаєте в інші області?</summary><p>Так. Працюємо в Західній Україні й за її межами. Бригади виїжджають з проживанням.</p></details>
-      <details><summary>Як оплатити?</summary><p>Аванс, поетапно, готівкою чи безготівковим розрахунком. <span class="ph">[ПДВ: уточнити]</span></p></details>
+      <details><summary>Як оплатити?</summary><p>Аванс і поетапна оплата, готівкою чи безготівково. Графік оплати фіксуємо в договорі.</p></details>
       <details><summary>Скільки коштує виїзд на замір?</summary><p>Поруч безкоштовно, далі за домовленістю.</p></details>
       <details><summary>Що потрібно для розрахунку?</summary><p>Розмір (довжина, ширина, висота), місце й для чого конструкція. Є фото чи креслення, надішліть. Ні, ми виїдемо на замір.</p></details>
       <details><summary>Ви займаєтесь проєктом?</summary><p>Так, у команді є інженер-проєктувальник. Проєкт під ваші потреби входить в об'єкт під ключ.</p></details>
@@ -201,9 +206,7 @@ document.addEventListener('click', function (e) {
       <div class="sec-h"><div class="k">Заявка</div><h2>Розрахуємо вашу задачу</h2><p>Залиште номер: передзвонимо протягом години і домовимось про замір.</p></div>
       <ul class="list">
         <li>Менеджер: Паша, <a href="tel:+380982279532">098 227 95 32</a> <br><a href="viber://chat?number=%2B380982279532">Viber</a> · <a href="https://t.me/+380982279532">Telegram</a> · <a href="https://wa.me/380982279532">WhatsApp</a></li>
-        <li>Адреса: <span class="ph">[Рівне, адреса офісу, якщо є; або «виїзд на об'єкт»]</span></li>
-        <li>Пошта: <span class="ph">[пошта компанії]</span></li>
-        <li>Години: <span class="ph">[графік дзвінків]</span></li>
+        <li>Рівне. Виїжджаємо на замір і монтаж на ваш об'єкт.</li>
       </ul>
     </div>
     <form class="formbox">
@@ -222,12 +225,12 @@ document.addEventListener('click', function (e) {
 <footer>
   <div class="wrap">
     <div><img src="/img/logo-lockup.svg" alt="Розкальона сталь, Rozkalona Steel" width="170" height="56" style="width:auto;height:56px;margin-bottom:8px"><br>Рівне, Україна</div>
-    <div><a href="/index.html">Головна</a><br><a href="/navisy.html">Навіси</a><br><a href="/vorota-parkany.html">Ворота й паркани</a><br><a href="#zayavka">Заявка</a></div>
-    <div>Логотип: чернетка.<br>Прототип від 18.11.2026</div>
+    <div><a href="/navisy.html">Навіси</a><br><a href="/vorota-parkany.html">Ворота й паркани</a><br><a href="/angary.html">Ангари й склади</a><br><a href="/obyekty.html">Об'єкти</a></div>
+    <div>Телефон: <a href="tel:+380982279532">098 227 95 32</a><br>Viber · Telegram · WhatsApp<br>© 2026 Розкальона сталь</div>
   </div>
 </footer>
 <div class="mbar"><a href="#zayavka">Розрахунок</a><a class="b" href="#poslugy">Послуги</a></div>
-<script src="/form.js?v=20261126a"></script>
-<script src="/sparks.js?v=20261126a" defer></script>
+<script src="/form.js?v=20261126b"></script>
+<script src="/sparks.js?v=20261126b" defer></script>
 </body>
 </html>
