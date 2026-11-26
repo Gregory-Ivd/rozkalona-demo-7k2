@@ -17,6 +17,21 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BFSEK5499T"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-BFSEK5499T');
+window.trackLead = function (what) {
+  gtag('event', 'generate_lead', { item_name: what || '' });
+};
+document.addEventListener('click', function (e) {
+  var a = e.target.closest && e.target.closest('a[href^="tel:"]');
+  if (!a) return;
+  gtag('event', 'phone_click', { link_url: a.getAttribute('href') });
+});
+</script>
 
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"LocalBusiness","name":"Розкальона сталь","alternateName":"Rozkalona Steel","url":"https://rozkalona.com.ua/","telephone":"+380982279532","description":"Проєктуємо, виготовляємо й монтуємо навіси, ангари, ворота та паркани у Рівному й області.","areaServed":[{"@type":"City","name":"Рівне"},{"@type":"AdministrativeArea","name":"Рівненська область"}],"address":{"@type":"PostalAddress","addressLocality":"Рівне","addressCountry":"UA"}}

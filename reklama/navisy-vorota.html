@@ -9,6 +9,21 @@
 <meta property="og:title" content="Навіси та ворота під ключ у Рівному | Розкальона сталь">
 <meta property="og:description" content="Проєкт, виготовлення з металу й монтаж навісів, воріт і парканів у Рівному й області. Замір поруч безкоштовно, відповідаємо протягом години.">
 <meta property="og:image" content="https://rozkalona.com.ua/img/og.jpg">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BFSEK5499T"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-BFSEK5499T');
+window.trackLead = function (what) {
+  gtag('event', 'generate_lead', { item_name: what || '' });
+};
+document.addEventListener('click', function (e) {
+  var a = e.target.closest && e.target.closest('a[href^="tel:"]');
+  if (!a) return;
+  gtag('event', 'phone_click', { link_url: a.getAttribute('href') });
+});
+</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Oswald:wght@500;600;700&display=swap&subset=cyrillic" rel="stylesheet">
