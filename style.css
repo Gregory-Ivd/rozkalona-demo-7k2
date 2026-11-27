@@ -90,6 +90,7 @@ a.card:hover{transform:translateY(-3px);border-color:var(--red)}
 .shot{aspect-ratio:4/3;border-radius:12px;display:grid;place-items:center;text-align:center;padding:16px;font-size:13px;font-weight:600;color:#8a8984;border:2px dashed #b9b5a8;background:repeating-linear-gradient(45deg,#ebe8df 0 14px,#f3f1ec 14px 28px)}
 .shot small{display:block;font-weight:500;margin-top:4px;color:#9b9a95}
 .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.shots.shots-2{grid-template-columns:1fr 1fr;max-width:900px}
 
 /* placeholder marker */
 .ph{background:#fff3cd;border:1px dashed #d9a400;color:#6b5300;padding:0 6px;border-radius:5px;font-weight:600;font-size:.92em}
